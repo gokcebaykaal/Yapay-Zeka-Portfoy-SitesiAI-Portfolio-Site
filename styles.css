@@ -1,0 +1,129 @@
+/* Temel renk değişkenleri */
+:root {
+    --primary-color: #35424a;
+    --secondary-color: #e8491d;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --white-color: #ffffff;
+}
+
+/* Genel stil */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Kapsayıcı stil */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Üstbilgi stil */
+header {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: var(--secondary-color) 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* Navigasyon stil */
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Ana içerik stil */
+main {
+    padding: 20px 0;
+}
+
+/* Bölüm stil */
+section {
+    margin-bottom: 20px;
+    background: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section img.responsive {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Altbilgi stil */
+footer {
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--white-color);
+}
+
+/* Medya sorguları */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1, nav {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
